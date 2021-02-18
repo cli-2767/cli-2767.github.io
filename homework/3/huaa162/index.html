@@ -5,35 +5,24 @@
 <head>
 
 	<script>
-
 		var ns = "http://www.w3.org/2000/svg";
-
 		window.onload = function(ev) {
-
-			var width = 400;
-			var height = 400;
-
+			var width = 1000;
+            var height = 1000;
+            
 			var svg = document.getElementById("mysvg");
-
 			svg.setAttribute("width", width);
 			svg.setAttribute("height", height);
-
 			for (var i = 0; i < 100; i++) {
-
 				var line = document.createElementNS(ns, "line");
-
 				line.setAttribute("x1", width * Math.random());
 				line.setAttribute("y1", height * Math.random());
 				line.setAttribute("x2", width * Math.random());
 				line.setAttribute("y2", height * Math.random());
-				line.style.stroke = "rgb(0, 0, 0)";
-
+				line.style.stroke = "rgb(255, 255, 0)";
 				svg.appendChild(line);
-
 			}
-
 		}
-
 	</script>
 
 </head>
@@ -42,7 +31,3 @@
 	
 	<svg id="mysvg">
 	</svg>
-
-</body>
-
-</html>
